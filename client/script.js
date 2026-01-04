@@ -6,7 +6,7 @@ async function submitData() {
         subject3: Number(s3.value)
     };
 
-    const res = await fetch("http://localhost:5000/api/students", {
+    const res = await fetch("/api/students", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
